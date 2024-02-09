@@ -16,9 +16,19 @@
         },
         "profiles": [
             {
-                "network": "Twitter",
+                "network": "LinkedIn",
                 "username": "john",
-                "url": "https://twitter.com/john"
+                "url": "https://www.linkedin.com/"
+            },
+            {
+                "network": "Github",
+                "username": "john",
+                "url": "https://github.com/"
+            },
+            {
+                "network": "X",
+                "username": "john",
+                "url": "https://twitter.com/"
             }
         ]
     },

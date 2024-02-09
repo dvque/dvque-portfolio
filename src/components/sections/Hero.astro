@@ -1,8 +1,20 @@
 ---
 import { basics } from "cv.json";
 
-const { name, label, image, email, phone, url, summary, location } = basics;
+import Mail from "@/icons/Mail.astro";
+import Phone from "@/icons/Phone.astro";
+import Github from "@/icons/GitHub.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import X from "@/icons/X.astro";
+
+const { name, label, image, location, profiles, phone, email } = basics;
 const { city, region, countryCode } = location;
+
+const SOCIAL_ICONS: Record<string, any> = {
+    Github,
+    LinkedIn,
+    X,
+};
 ---
 
 <section class="mx-auto w-full max-w-2xl space-y-8 print:space-y-6">
@@ -31,7 +43,7 @@ const { city, region, countryCode } = location;
                     {city}, {region}, {countryCode}
                 </span>
             </p>
-            <footer>
+            <footer class="flex flex-row gap-1">
                 {
                     email && (
                         <a
@@ -41,7 +53,7 @@ const { city, region, countryCode } = location;
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            {email}
+                            <Mail />
                         </a>
                     )
                 }
@@ -51,19 +63,25 @@ const { city, region, countryCode } = location;
                             href={`tel:${phone}`}
                             class="text-pretty text-xs text-muted-foreground"
                         >
-                            {phone}
+                            <Phone />
                         </a>
                     )
                 }
                 {
-                    url && (
-                        <a
-                            href={url}
-                            class="text-pretty text-xs text-muted-foreground"
-                        >
-                            {url}
-                        </a>
-                    )
+                    profiles.map(({ network, url, username }) => {
+                        const Icon = SOCIAL_ICONS[network];
+                        return (
+                            <a
+                                href={url}
+                                class="text-pretty text-xs text-muted-foreground"
+                                title={`Visit ${network} profile of ${username}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Icon />
+                            </a>
+                        );
+                    })
                 }
             </footer>
         </div>
