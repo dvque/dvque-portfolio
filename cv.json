@@ -2,7 +2,7 @@
     "basics": {
         "name": "John Doe",
         "label": "Programmer",
-        "image": "",
+        "image": "/me.webp",
         "email": "john@gmail.com",
         "phone": "(912) 555-4321",
         "url": "https://johndoe.com",
