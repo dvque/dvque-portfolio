@@ -1,11 +1,14 @@
 ---
 import { basics } from "cv.json";
 
+import Section from "@/components/Section.astro";
+
 import Mail from "@/icons/Mail.astro";
 import Phone from "@/icons/Phone.astro";
 import Github from "@/icons/GitHub.astro";
 import LinkedIn from "@/icons/LinkedIn.astro";
 import X from "@/icons/X.astro";
+import Worldmap from "@/icons/Worldmap.astro";
 
 const { name, label, image, location, profiles, phone, email } = basics;
 const { city, region, countryCode } = location;
@@ -17,37 +20,22 @@ const SOCIAL_ICONS: Record<string, any> = {
 };
 ---
 
-<section class="mx-auto w-full max-w-2xl space-y-8 print:space-y-6">
-    <div class="flex items-center justify-between">
-        <div class="flex-1 space-y-1.5">
+<Section>
+    <div class="grid grid-flow-col justify-stretch">
+        <div>
             <h1 class="text-2xl font-bold">{name}</h1>
-            <p class="max-w-md text-pretty text-sm text-muted-foreground">
-                {label}
-            </p>
-            <p
-                class="max-w-md items-center text-pretty text-xs text-muted-foreground"
-            >
-                <span class="inline-flex gap-x-1.5 align-baseline leading-none">
-                    <svg
-                        class="icon icon-tabler icon-tabler-map-pin w-3"
-                        viewBox="0 0 24 24"
-                        stroke-width="2"
-                        stroke="currentColor"
-                        fill="none"
-                        ><path stroke="none" d="M0 0h24v24H0z" fill="none"
-                        ></path><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"
-                        ></path><path
-                            d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
-                        ></path></svg
-                    >
+            <p>{label}</p>
+            <div class="flex gap-x-2">
+                <Worldmap />
+                <span>
                     {city}, {region}, {countryCode}
                 </span>
-            </p>
-            <footer class="flex flex-row gap-1">
+            </div>
+            <footer class="flex gap-1">
                 {
                     email && (
                         <a
-                            class="text-pretty text-xs text-muted-foreground"
+                            class=""
                             href={`mailto:${email}`}
                             title={`Send an email to ${name}`}
                             target="_blank"
@@ -59,10 +47,7 @@ const SOCIAL_ICONS: Record<string, any> = {
                 }
                 {
                     phone && (
-                        <a
-                            href={`tel:${phone}`}
-                            class="text-pretty text-xs text-muted-foreground"
-                        >
+                        <a href={`tel:${phone}`} class="">
                             <Phone />
                         </a>
                     )
@@ -73,7 +58,7 @@ const SOCIAL_ICONS: Record<string, any> = {
                         return (
                             <a
                                 href={url}
-                                class="text-pretty text-xs text-muted-foreground"
+                                class=""
                                 title={`Visit ${network} profile of ${username}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -85,13 +70,15 @@ const SOCIAL_ICONS: Record<string, any> = {
                 }
             </footer>
         </div>
-
-        <figure>
+        <figure class="flex justify-end">
             <img
-                class="size-36 relative flex shrink-0 overflow-hidden rounded-xl"
+                class="rounded-xl size-36"
                 src={image}
                 alt="Image Description"
             />
         </figure>
     </div>
-</section>
+    <div class="flex flex-row">
+        <div class="flex flex-col"></div>
+    </div>
+</Section>
