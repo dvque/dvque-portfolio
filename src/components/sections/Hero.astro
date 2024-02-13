@@ -21,17 +21,18 @@ const SOCIAL_ICONS: Record<string, any> = {
 ---
 
 <Section>
-    <div class="grid grid-flow-col justify-stretch">
-        <div>
-            <h1 class="text-2xl font-bold">{name}</h1>
-            <p>{label}</p>
-            <div class="flex gap-x-2">
+    <div class="container">
+        <div class="info">
+            <h1>{name}</h1>
+            <h2>{label}</h2>
+            <span>
                 <Worldmap />
-                <span>
-                    {city}, {region}, {countryCode}
-                </span>
-            </div>
-            <footer class="flex gap-1">
+                {city}, {region}
+            </span>
+            <footer class="print">
+                <!-- {printInfo} -->
+            </footer>
+            <footer class="no-print">
                 {
                     email && (
                         <a
@@ -70,15 +71,102 @@ const SOCIAL_ICONS: Record<string, any> = {
                 }
             </footer>
         </div>
-        <figure class="flex justify-end">
-            <img
-                class="rounded-xl size-36"
-                src={image}
-                alt="Image Description"
-            />
+        <figure>
+            <img src={image} alt={name} />
         </figure>
     </div>
-    <div class="flex flex-row">
-        <div class="flex flex-col"></div>
-    </div>
 </Section>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-right: 32px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 1.1rem;
+        text-wrap: balance;
+    }
+
+    img {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        width: 128px;
+        border-radius: 16px;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        font-size: 0.85rem;
+        letter-spacing: -0.05rem;
+    }
+
+    footer {
+        font-size: 0.65rem;
+        display: flex;
+        gap: 4px;
+        margin-top: 8px;
+    }
+
+    footer a {
+        color: #777;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #eeeeee5d;
+        padding: 4px;
+        height: 32px;
+        width: 32px;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+
+    footer a:hover {
+        background: #eee;
+        border: 1px solid #ddd;
+    }
+
+    @media (width <= 700px) {
+        .container {
+            flex-direction: column-reverse;
+        }
+
+        .info {
+            justify-content: center;
+            align-items: center;
+            padding-right: 0;
+            text-align: center;
+        }
+
+        figure {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            text-wrap: balance;
+        }
+
+        figure {
+            margin: 0 auto;
+        }
+    }
+</style>
