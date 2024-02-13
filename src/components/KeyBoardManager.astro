@@ -1,5 +1,7 @@
-<footer></footer>
-<ninja-keys placeholder="Type to search..."></ninja-keys>
+<footer>
+    Pulsa <kbd>Cmd</kbd> + <kbd>K</kbd> para abrir la paleta de comandos.
+</footer>
+<ninja-keys placeholder="Type to search..." hideBreadcrumbs></ninja-keys>
 <script>
     import "ninja-keys";
     const ninja = document.querySelector("ninja-keys");
@@ -24,5 +26,23 @@
         ninja-keys {
             display: none;
         }
+    }
+
+    footer {
+        color: black;
+        background: #fdfdfd;
+        border-top: 1px solid #eee;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        padding-block: 8px;
+        text-align: center;
+    }
+
+    kbd {
+        background: #d6d6d6;
+        padding: 2px 4px;
+        border-radius: 4px;
+        margin: 0 4px;
     }
 </style>
