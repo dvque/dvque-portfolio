@@ -1,3 +1,28 @@
+---
+import { basics } from "cv.json";
+
+import GitHub from "@/icons/GitHub.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import X from "@/icons/X.astro";
+
+const { profiles } = basics;
+
+const SOCIAL_ICONS = {
+    GitHub,
+    LinkedIn,
+    X,
+};
+
+const profilesInfo = profiles.map(({ network, url }) => {
+    const Icon = SOCIAL_ICONS[network as keyof typeof SOCIAL_ICONS];
+    const firstLetter = network[0].toUpperCase();
+    return {
+        section: "Social",
+        title: network,
+    };
+});
+---
+
 <footer>
     Pulsa <kbd>Cmd</kbd> + <kbd>K</kbd> para abrir la paleta de comandos.
 </footer>
