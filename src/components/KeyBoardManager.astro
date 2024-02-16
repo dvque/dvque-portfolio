@@ -76,7 +76,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
 });
 ---
 
-<footer>
+<footer class="no-print">
     Pulsa <kbd>Cmd</kbd> + <kbd>K</kbd> para abrir la paleta de comandos.
 </footer>
 
@@ -124,6 +124,15 @@ const profilesInfo = profiles.map(({ network, url }) => {
         }
     }
 
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
     footer {
         color: black;
         background: #fdfdfd;
@@ -133,6 +142,13 @@ const profilesInfo = profiles.map(({ network, url }) => {
         width: 100%;
         padding-block: 8px;
         text-align: center;
+
+        view-timeline-name: --revealing;
+        view-timeline-axis: block;
+
+        animation: linear 0.3s fadeIn;
+        animation-timeline: --revealing;
+        animation-range: entry 100% cover 5%;
     }
 
     kbd {
@@ -140,5 +156,11 @@ const profilesInfo = profiles.map(({ network, url }) => {
         padding: 2px 4px;
         border-radius: 4px;
         margin: 0 4px;
+    }
+
+    @media print {
+        .no-print {
+            display: none;
+        }
     }
 </style>
