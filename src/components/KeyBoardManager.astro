@@ -14,11 +14,18 @@ const SOCIAL_ICONS = {
 };
 
 const profilesInfo = profiles.map(({ network, url }) => {
-    const Icon = SOCIAL_ICONS[network as keyof typeof SOCIAL_ICONS];
+    const icon = SOCIAL_ICONS[network as keyof typeof SOCIAL_ICONS];
     const firstLetter = network[0].toUpperCase();
     return {
+        id: network,
         section: "Social",
-        title: network,
+        title: `Visit ${network} - ${url.replace("https://", "")}`,
+        url,
+        icon,
+        hotKey: `ctrl+${firstLetter}`,
+        handler: () => {
+            window.open(url, "_blank");
+        },
     };
 });
 ---
@@ -26,12 +33,29 @@ const profilesInfo = profiles.map(({ network, url }) => {
 <footer>
     Pulsa <kbd>Cmd</kbd> + <kbd>K</kbd> para abrir la paleta de comandos.
 </footer>
-<ninja-keys placeholder="Type to search..." hideBreadcrumbs></ninja-keys>
+
+<ninja-keys
+    data-info={JSON.stringify(profilesInfo)}
+    placeholder="Type to search..."
+    hideBreadcrumbs></ninja-keys>
+
 <script>
     import "ninja-keys";
     const ninja = document.querySelector("ninja-keys");
 
     if (ninja !== null) {
+        const info = ninja?.getAttribute("data-info") ?? "[]";
+        const parsedInfo = JSON.parse(info);
+
+        const data = parsedInfo.map((item: any) => {
+            return {
+                ...item,
+                hander: () => {
+                    window.open(item.url, "_blank");
+                },
+            };
+        });
+
         ninja.data = [
             {
                 id: "Print",
@@ -43,6 +67,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
                     window.print();
                 },
             },
+            ...data,
         ];
     }
 </script>
