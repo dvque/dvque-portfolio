@@ -9,9 +9,12 @@ import KeyBoardManager from "@/components/KeyBoardManager.astro";
 import Languages from "@/components/sections/Languages.astro";
 import Projects from "@/components/sections/Projects.astro";
 import Skills from "@/components/sections/Skills.astro";
+
+import { basics } from "cv.json";
+const { name, label } = basics;
 ---
 
-<Layout title="Portfolio @dvque">
+<Layout title=`Portfolio ${name} - ${label}`>
 	<main
 		class="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16 space-y-10"
 	>
