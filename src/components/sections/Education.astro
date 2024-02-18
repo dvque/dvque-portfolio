@@ -1,23 +1,47 @@
 ---
 import Section from "@/components/Section.astro";
+import { education } from "cv.json";
 ---
 
 <Section title="Education">
-    <div class="rounded-lg bg-card text-card-foreground">
-        <div class="flex flex-col space-y-1.5">
-            <div class="flex items-center justify-between gap-x-2 text-base">
-                <h3
-                    class="inline-flex items-center justify-center gap-x-1 font-semibold leading-none"
-                >
-                    <a class="hover:underline" href="#"> company</a>
-                </h3>
-                <div class="text-sm tabular-nums text-gray-500">
-                    start - end
-                </div>
-            </div>
-        </div>
-        <div class="text-pretty font-mono text-sm text-muted-foreground">
-            <div class="mt-2 text-xs">Card content</div>
-        </div>
-    </div>
+    <ul class="flex flex-col gap-3">
+        {
+            education.map(
+                ({ institution, startDate, endDate, studyType, courses }) => {
+                    const startYear = new Date(startDate).getFullYear();
+                    const endYear = endDate
+                        ? new Date(endDate).getFullYear().toString()
+                        : "Actualidad";
+                    const years = `${startYear} - ${endYear}`;
+
+                    return (
+                        <li>
+                            <article class="flex flex-col gap-1">
+                                <header class="flex flex-row justify-between">
+                                    <div>
+                                        <h3 class="font-sans font-bold">
+                                            {institution}
+                                        </h3>
+                                    </div>
+                                    <time>
+                                        <p class="font-sans">{years}</p>
+                                    </time>
+                                </header>
+                                <footer>
+                                    <p class="font-mono text-gray-400 text-balance">
+                                        {studyType}
+                                    </p>
+                                    <ul>
+                                        {courses.map((course) => (
+                                            <li>{course}</li>
+                                        ))}
+                                    </ul>
+                                </footer>
+                            </article>
+                        </li>
+                    );
+                },
+            )
+        }
+    </ul>
 </Section>

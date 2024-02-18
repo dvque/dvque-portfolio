@@ -40,7 +40,9 @@
             "startDate": "2018-01-01",
             "endDate": "",
             "summary": "Implemented new features, led squad, worked on improving the way developers ship code, and helped to improve the company's culture. Tecnologies: Angular, React, C#, AWS, Docker, Kubernetes, Jenkins, and more.",
-            "highlights": []
+            "highlights": [
+                "Backoffice web application with more than 10k request per day"
+            ]
         }
     ],
     "volunteer": [
@@ -58,16 +60,24 @@
     ],
     "education": [
         {
-            "institution": "University",
-            "url": "https://institution.com/",
-            "area": "Software Development",
-            "studyType": "Bachelor",
-            "startDate": "2011-01-01",
-            "endDate": "2013-01-01",
-            "score": "4.0",
-            "courses": [
-                "DB1101 - Basic SQL"
-            ]
+            "institution": "European University of Madrid",
+            "url": "",
+            "area": "",
+            "studyType": "Master in Business Administration and Management",
+            "startDate": "2022-01-01",
+            "endDate": "2023-01-01",
+            "score": "",
+            "courses": []
+        },
+        {
+            "institution": "Polytechnic University of Valencia",
+            "url": "",
+            "area": "",
+            "studyType": "Bachelor's Degree in Computer Science",
+            "startDate": "2014-01-01",
+            "endDate": "2018-01-01",
+            "score": "",
+            "courses": []
         }
     ],
     "awards": [
