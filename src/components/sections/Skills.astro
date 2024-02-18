@@ -5,11 +5,11 @@ import { skills } from "cv.json";
 ---
 
 <Section title="Skills">
-    <ul>
+    <ul class="flex gap-2">
         {
             skills.map(({ name }) => (
                 <li>
-                    <span>{name}</span>
+                    <span class="font-mono">{name}</span>
                 </li>
             ))
         }
@@ -17,11 +17,11 @@ import { skills } from "cv.json";
 </Section>
 
 <style>
-    ul {
+    /* ul {
         display: inline-flex;
         gap: 8px;
         flex-wrap: wrap;
-    }
+    } */
 
     li {
         border-radius: 6px;
