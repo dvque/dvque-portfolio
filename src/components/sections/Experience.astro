@@ -1,11 +1,10 @@
 ---
 import Section from "@/components/Section.astro";
-
 import { work } from "cv.json";
 ---
 
 <Section title="Work Experience">
-    <ul>
+    <ul class="flex flex-col gap-3">
         {
             work.map(
                 ({
@@ -17,23 +16,29 @@ import { work } from "cv.json";
                     highlights,
                 }) => {
                     const startYear = new Date(startDate).getFullYear();
-                    const endYear =
-                        endDate !== null ? new Date(endDate).getFullYear() : "";
+                    const endYear = endDate
+                        ? new Date(endDate).getFullYear().toString()
+                        : "Actualidad";
                     const years = `${startYear} - ${endYear}`;
+
                     return (
                         <li>
-                            <article>
-                                <header>
+                            <article class="flex flex-col gap-1">
+                                <header class="flex flex-row justify-between">
                                     <div>
-                                        <h3>{name}</h3>
-                                        <p>{position}</p>
+                                        <h3 class="font-sans font-bold">
+                                            {name}
+                                        </h3>
+                                        <p class="font-mono">{position}</p>
                                     </div>
                                     <time>
-                                        <p>{years}</p>
+                                        <p class="font-sans">{years}</p>
                                     </time>
                                 </header>
                                 <footer>
-                                    <p>{summary}</p>
+                                    <p class="font-mono text-gray-400 text-balance">
+                                        {summary}
+                                    </p>
                                     <ul>
                                         {highlights.map((highlight) => (
                                             <li>{highlight}</li>

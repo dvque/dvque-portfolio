@@ -34,15 +34,13 @@
     },
     "work": [
         {
-            "name": "Company",
-            "position": "President",
+            "name": "Stadler Rail AG",
+            "position": "Mid Full Stack Engineer",
             "url": "https://company.com",
-            "startDate": "2013-01-01",
-            "endDate": "2014-01-01",
-            "summary": "Description…",
-            "highlights": [
-                "Started the company"
-            ]
+            "startDate": "2018-01-01",
+            "endDate": "",
+            "summary": "Implemented new features, led squad, worked on improving the way developers ship code, and helped to improve the company's culture. Tecnologies: Angular, React, C#, AWS, Docker, Kubernetes, Jenkins, and more.",
+            "highlights": []
         }
     ],
     "volunteer": [
