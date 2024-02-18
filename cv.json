@@ -67,7 +67,9 @@
             "startDate": "2022-01-01",
             "endDate": "2023-01-01",
             "score": "",
-            "courses": []
+            "courses": [
+                "Business model for a software development company and distribution of diabetes medications."
+            ]
         },
         {
             "institution": "Polytechnic University of Valencia",
@@ -77,7 +79,9 @@
             "startDate": "2014-01-01",
             "endDate": "2018-01-01",
             "score": "",
-            "courses": []
+            "courses": [
+                "Web application for license and user management with real-time data visualization."
+            ]
         }
     ],
     "awards": [
@@ -107,49 +111,104 @@
     ],
     "skills": [
         {
-            "name": "Web Development",
-            "level": "Master",
-            "keywords": [
-                "HTML",
-                "CSS",
-                "JavaScript"
-            ]
+            "name": "TypeScript",
+            "level": "",
+            "keywords": []
         },
         {
-            "name": "Web Development",
-            "level": "Master",
-            "keywords": [
-                "HTML",
-                "CSS",
-                "JavaScript"
-            ]
+            "name": "C#",
+            "level": "",
+            "keywords": []
         },
         {
-            "name": "Web Development",
-            "level": "Master",
-            "keywords": [
-                "HTML",
-                "CSS",
-                "JavaScript"
-            ]
+            "name": "Python",
+            "level": "",
+            "keywords": []
         },
         {
-            "name": "Web Development",
-            "level": "Master",
-            "keywords": [
-                "HTML",
-                "CSS",
-                "JavaScript"
-            ]
+            "name": "AWS",
+            "level": "",
+            "keywords": []
         },
         {
-            "name": "Web",
-            "level": "Master",
-            "keywords": [
-                "HTML",
-                "CSS",
-                "JavaScript"
-            ]
+            "name": "Azure",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Mendix",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Teamcenter",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Git",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "CI/CD",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Testing",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "React",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "NextJS",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Solid",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Astro",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Supabase",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Angular",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Oracle SQL",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Node",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Docker",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "GraphQL",
+            "level": "",
+            "keywords": []
         }
     ],
     "languages": [
