@@ -24,14 +24,16 @@ import { education } from "cv.json";
                                         </h3>
                                     </div>
                                     <time>
-                                        <p class="font-sans">{years}</p>
+                                        <p class="font-sans text-gray-400">
+                                            {years}
+                                        </p>
                                     </time>
                                 </header>
                                 <footer>
                                     <p class="font-mono text-gray-400 text-balance">
                                         {studyType}
                                     </p>
-                                    <ul>
+                                    <ul class="list-disc text-gray-400 font-mono ml-4">
                                         {courses.map((course) => (
                                             <li>{course}</li>
                                         ))}

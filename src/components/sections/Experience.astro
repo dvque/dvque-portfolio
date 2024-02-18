@@ -32,14 +32,16 @@ import { work } from "cv.json";
                                         <p class="font-mono">{position}</p>
                                     </div>
                                     <time>
-                                        <p class="font-sans">{years}</p>
+                                        <p class="font-sans text-gray-400">
+                                            {years}
+                                        </p>
                                     </time>
                                 </header>
-                                <footer>
+                                <footer class="flex flex-col gap-2">
                                     <p class="font-mono text-gray-400 text-balance">
                                         {summary}
                                     </p>
-                                    <ul>
+                                    <ul class="list-disc text-gray-400 font-mono ml-4">
                                         {highlights.map((highlight) => (
                                             <li>{highlight}</li>
                                         ))}

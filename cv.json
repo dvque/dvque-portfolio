@@ -38,10 +38,14 @@
             "position": "Mid Full Stack Engineer",
             "url": "https://company.com",
             "startDate": "2018-01-01",
-            "endDate": "",
+            "endDate": "2024",
             "summary": "Implemented new features, led squad, worked on improving the way developers ship code, and helped to improve the company's culture. Tecnologies: Angular, React, C#, AWS, Docker, Kubernetes, Jenkins, and more.",
             "highlights": [
-                "Backoffice web application with more than 10k request per day"
+                "Developed a backoffice web application with over 10k requests per day.",
+                "Cost reduction and productivity improvement.",
+                "Led end-to-end development of applications from scratch to production.",
+                "Collaborated effectively in international team environments.",
+                "Siemens Teamcenter SOA and Mendix development."
             ]
         }
     ],
@@ -68,7 +72,7 @@
             "endDate": "2023-01-01",
             "score": "",
             "courses": [
-                "Business model for a software development company and distribution of diabetes medications."
+                "Business model for a software company and distribution of diabetes medications."
             ]
         },
         {
