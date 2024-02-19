@@ -67,7 +67,7 @@
             "institution": "European University of Madrid",
             "url": "",
             "area": "",
-            "studyType": "Master in Business Administration and Management",
+            "studyType": "Master's Degree in Business Administration and Management",
             "startDate": "2022-01-01",
             "endDate": "2023-01-01",
             "score": "",
@@ -76,7 +76,7 @@
             ]
         },
         {
-            "institution": "Polytechnic University of Valencia",
+            "institution": "Universitat Politècnica de València (UPV)",
             "url": "",
             "area": "",
             "studyType": "Bachelor's Degree in Computer Science",
@@ -238,11 +238,99 @@
     ],
     "projects": [
         {
-            "name": "Project",
-            "startDate": "2019-01-01",
-            "endDate": "2021-01-01",
+            "name": "Consultly",
+            "startDate": "",
+            "endDate": "",
             "isActive": true,
-            "description": "Description...",
+            "description": "A platform to build and grow your online business.",
+            "highlights": [
+                "Won award at AIHacks 2016"
+            ],
+            "url": "https://project.com/"
+        },
+        {
+            "name": "Consultly",
+            "startDate": "",
+            "endDate": "",
+            "isActive": true,
+            "description": "A platform to build and grow your online business.",
+            "highlights": [
+                "Won award at AIHacks 2016"
+            ],
+            "url": "https://project.com/"
+        },
+        {
+            "name": "Consultly",
+            "startDate": "",
+            "endDate": "",
+            "isActive": true,
+            "description": "A platform to build and grow your online business.",
+            "highlights": [
+                "Won award at AIHacks 2016"
+            ],
+            "url": "https://project.com/"
+        },
+        {
+            "name": "Consultly",
+            "startDate": "",
+            "endDate": "",
+            "isActive": true,
+            "description": "A platform to build and grow your online business.",
+            "highlights": [
+                "Won award at AIHacks 2016"
+            ],
+            "url": "https://project.com/"
+        },
+        {
+            "name": "Consultly",
+            "startDate": "",
+            "endDate": "",
+            "isActive": true,
+            "description": "A platform to build and grow your online business.",
+            "highlights": [
+                "Won award at AIHacks 2016"
+            ],
+            "url": "https://project.com/"
+        },
+        {
+            "name": "Consultly",
+            "startDate": "",
+            "endDate": "",
+            "isActive": true,
+            "description": "A platform to build and grow your online business.",
+            "highlights": [
+                "Won award at AIHacks 2016"
+            ],
+            "url": "https://project.com/"
+        },
+        {
+            "name": "Consultly",
+            "startDate": "",
+            "endDate": "",
+            "isActive": true,
+            "description": "A platform to build and grow your online business.",
+            "highlights": [
+                "Won award at AIHacks 2016"
+            ],
+            "url": "https://project.com/"
+        },
+        {
+            "name": "Consultly",
+            "startDate": "",
+            "endDate": "",
+            "isActive": true,
+            "description": "A platform to build and grow your online business.",
+            "highlights": [
+                "Won award at AIHacks 2016"
+            ],
+            "url": "https://project.com/"
+        },
+        {
+            "name": "Consultly",
+            "startDate": "",
+            "endDate": "",
+            "isActive": true,
+            "description": "A platform to build and grow your online business.",
             "highlights": [
                 "Won award at AIHacks 2016"
             ],

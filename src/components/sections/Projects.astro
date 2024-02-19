@@ -16,16 +16,21 @@ import { projects } from "cv.json";
                                     <a
                                         href={url}
                                         title={`View ${name} project`}
+                                        class="font-sans font-bold text-lg  hover:text-green transition-colors duration-200 ease-in-out"
                                     >
                                         {name}
                                     </a>
                                     {isActive && <span>&bull;</span>}
                                 </h3>
-                                <p>{description}</p>
+                                <p class="font-mono">{description}</p>
                             </header>
                             <footer>
                                 {highlights.map((highlight) => {
-                                    return <span>{highlight}</span>;
+                                    return (
+                                        <span class="font-mono">
+                                            {highlight}
+                                        </span>
+                                    );
                                 })}
                             </footer>
                         </article>
