@@ -28,8 +28,8 @@ const SOCIAL_ICONS: Record<string, string> = {
     xmlns="http://www.w3.org/2000/svg"
     style="margin-right: 4px"
     class="icon icon-tabler icon-tabler-brand-linkedin"
-    width=21
-    height=21
+    width=22
+    height=22
     viewBox="0 0 24 24"
     stroke-width="1.5"
     stroke="currentColor"
@@ -57,6 +57,7 @@ const SOCIAL_ICONS: Record<string, string> = {
         d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path
         d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg
 >`,
+    Mail: `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>`,
 };
 
 const profilesInfo = profiles.map(({ network, url }) => {
@@ -65,7 +66,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
     return {
         id: network,
         section: "Social",
-        title: `${network} - ${url.replace("https://", "")}`,
+        title: `${url.replace("https://", "")}`,
         url,
         icon: Icon,
         hotKey: `ctrl+${firstLetter}`,
@@ -79,7 +80,8 @@ const profilesInfo = profiles.map(({ network, url }) => {
 <ninja-keys
     data-info={JSON.stringify(profilesInfo)}
     placeholder="Type to search..."
-    hideBreadcrumbs></ninja-keys>
+    hideBreadcrumbs
+    class="font-sans"></ninja-keys>
 
 <script>
     import "ninja-keys";
@@ -102,11 +104,21 @@ const profilesInfo = profiles.map(({ network, url }) => {
             {
                 id: "Print",
                 title: "Print",
-                icon: `<svg style="margin-right: 4px" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-printer" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 17h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2" /><path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4" /><path d="M7 13m0 2a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2z" /></svg>`,
+                icon: `<svg style="margin-right: 4px" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-printer" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 17h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2" /><path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4" /><path d="M7 13m0 2a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2z" /></svg>`,
                 hotkey: "ctrl+P",
                 section: "Acciones",
                 handler: () => {
                     window.print();
+                },
+            },
+            {
+                id: "Mail",
+                title: "contact@dvque.com",
+                icon: `<svg style="margin-right: 4px" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>`,
+                hotkey: "ctrl+M",
+                section: "Social",
+                handler: () => {
+                    window.open("mailto: contact@dvque.com", "_blank");
                 },
             },
             ...data,
