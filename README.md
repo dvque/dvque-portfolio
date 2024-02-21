@@ -7,7 +7,7 @@ A minimal, responsive, and accessible personal website built with Astro and Tail
 - **Platform**: [Astro](https://github.com/withastro/astro)
 - **Frontend Library**: [Solid.js](https://github.com/solidjs/solid)
 - **Deployment**: [Vercel](https://vercel.com/)
-- **CI**: [GitHub Actions](https://github.com/features/actions)
+- **CI**: [Github Actions](https://github.com/features/actions)
 - **Package manager**: [pnpm](https://pnpm.io/)
 - **OG-images**: [Satori](https://github.com/vercel/satori)
 

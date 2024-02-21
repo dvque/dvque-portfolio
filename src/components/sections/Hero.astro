@@ -4,20 +4,20 @@ import { basics } from "cv.json";
 import Section from "@/components/Section.astro";
 
 import Mail from "@/icons/Mail.astro";
-import GitHub from "@/icons/GitHub.astro";
-import LinkedIn from "@/icons/LinkedIn.astro";
+import Github from "@/icons/Github.astro";
+import Linkedin from "@/icons/Linkedin.astro";
 import X from "@/icons/X.astro";
 
 const { name, label, image, location, profiles, phone, email } = basics;
 const { city, region, countryCode } = location;
 
 const SOCIAL_ICONS: Record<string, any> = {
-    GitHub,
-    LinkedIn,
+    Github,
+    Linkedin,
     X,
 };
 
-const linkedIn = profiles.find(({ network }) => network === "LinkedIn");
+const linkedIn = profiles.find(({ network }) => network === "Linkedin");
 const linkedUrl = linkedIn?.url;
 
 const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" | ");

@@ -16,12 +16,12 @@
         },
         "profiles": [
             {
-                "network": "LinkedIn",
+                "network": "Linkedin",
                 "username": "john",
                 "url": "https://linkedin.com/in/davidqll"
             },
             {
-                "network": "GitHub",
+                "network": "Github",
                 "username": "john",
                 "url": "https://github.com/dvque"
             },
