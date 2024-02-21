@@ -25,4 +25,11 @@ pnpm dev
 
 ```
 
+TODOS
+
+- [ ] Add a books section
+- [ ] Add a open-source section
+- [ ] Add a dark mode
+- [ ] Add a language switcher
+
 [![Built with Astro](https://astro.badg.es/v2/built-with-astro/medium.svg)](https://astro.build)
