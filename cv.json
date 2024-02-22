@@ -3,9 +3,9 @@
         "name": "David Querol",
         "label": "Full Stack Engineer focused on building products with extra attention to details.",
         "image": "/me.webp",
-        "email": "john@gmail.com",
+        "email": "contact@dvque.com",
         "phone": "(912) 555-4321",
-        "url": "https://johndoe.com",
+        "url": "https://dvque.com",
         "summary": "Software engineer specialized in application design, development and architecture, with experience in frontend technologies such as Angular and React, as well as backend with C# and cloud solutions. He has worked effectively in cross-cultural environments. His focus is on architecture decision making based on design patterns, backed by a strong DevOps culture and agile methodology, always prioritizing the creation of clean code. In addition, he has experience in web service management, microservices implementation through Docker, and an interest in AWS.",
         "location": {
             "address": "2712 Broadway St",

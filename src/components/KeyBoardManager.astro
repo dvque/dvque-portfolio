@@ -1,7 +1,7 @@
 ---
 import { basics } from "cv.json";
 
-const { profiles } = basics;
+const { profiles, email } = basics;
 
 const SOCIAL_ICONS: Record<string, string> = {
     Github: `<svg 
@@ -74,7 +74,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
 ---
 
 <ninja-keys
-    data-info={JSON.stringify(profilesInfo)}
+    data-info={(JSON.stringify(profilesInfo), email)}
     placeholder="Type to search..."
     hideBreadcrumbs
     class="font-sans"></ninja-keys>
@@ -84,6 +84,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
     const ninja = document.querySelector("ninja-keys");
 
     if (ninja !== null) {
+        const email = ninja?.getAttribute("email") ?? "";
         const info = ninja?.getAttribute("data-info") ?? "[]";
         const parsedInfo = JSON.parse(info);
 
@@ -114,7 +115,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
                 hotkey: "ctrl+M",
                 section: "Social",
                 handler: () => {
-                    window.open("mailto: contact@dvque.com", "_blank");
+                    window.open(`mailto: ${email}`, "_blank");
                 },
             },
             ...data,
