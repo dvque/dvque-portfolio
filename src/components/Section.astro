@@ -2,7 +2,7 @@
 const { title } = Astro.props;
 ---
 
-<section class="flex flex-col gap-3">
+<section class="mx-auto w-full max-w-2xl space-y-8 print:space-y-6">
     {title && <h2 class="text-xl font-bold font-sans">{title}</h2>}
     <slot />
 </section>
