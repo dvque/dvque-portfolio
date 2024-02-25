@@ -1,12 +1,12 @@
 {
     "basics": {
         "name": "David Querol",
-        "label": "Full Stack Engineer focused on building products with extra attention to details.",
+        "label": "Full-Stack Engineer, with experience in investment and a commitment to sustainable lifestyle.",
         "image": "/me.webp",
         "email": "contact@dvque.com",
         "phone": "(912) 555-4321",
         "url": "https://dvque.com",
-        "summary": "Software engineer specialized in application design, development and architecture, with experience in frontend technologies such as Angular and React, as well as backend with C# and cloud solutions. He has worked effectively in cross-cultural environments. His focus is on architecture decision making based on design patterns, backed by a strong DevOps culture and agile methodology, always prioritizing the creation of clean code. In addition, he has experience in web service management, microservices implementation through Docker, and an interest in AWS.",
+        "summary": "6+ years of experience as Full-Stack Engineer. Proven ability in building high-performing, innovative customer-centric products that exceed business needs. Entrepreneurial and Lean mindset backed by my experience in international company during hyper-growth stages.",
         "location": {
             "address": "2712 Broadway St",
             "postalCode": "CA 94115",
@@ -17,17 +17,17 @@
         "profiles": [
             {
                 "network": "Linkedin",
-                "username": "john",
+                "username": "davidqll",
                 "url": "https://linkedin.com/in/davidqll"
             },
             {
                 "network": "Github",
-                "username": "john",
+                "username": "dvque",
                 "url": "https://github.com/dvque"
             },
             {
                 "network": "X",
-                "username": "john",
+                "username": "david_qll",
                 "url": "https://twitter.com/david_qll"
             }
         ]
@@ -35,17 +35,17 @@
     "work": [
         {
             "name": "Stadler Rail AG",
-            "position": "Mid Full Stack Engineer",
-            "url": "https://company.com",
+            "position": "Mid Full-Stack Engineer",
+            "url": "https://www.stadlerrail.com/es/",
             "startDate": "2018-01-01",
             "endDate": "2024",
-            "summary": "Implemented new features, led squad, worked on improving the way developers ship code, and helped to improve the company's culture. Tecnologies: Angular, React, C#, AWS, Docker, Kubernetes, Jenkins, and more.",
+            "summary": "Identify and prioritize engineering inititatives to improve performance bottlenecks, reduce dependencies and enhance the development experience and operational efficiency.",
             "highlights": [
                 "Developed a backoffice web application with over 10k requests per day.",
                 "Cost reduction and productivity improvement.",
                 "Led end-to-end development of applications from scratch to production.",
                 "Collaborated effectively in international team environments.",
-                "Siemens Teamcenter SOA and Mendix development."
+                "Experience in PLM Siemens Teamcenter and Mendix development."
             ]
         }
     ],
@@ -72,7 +72,7 @@
             "endDate": "2023-01-01",
             "score": "",
             "courses": [
-                "Business model for a software company and distribution of diabetes medications."
+                "Business model for a software company specializing in the distribution of diabetes medications."
             ]
         },
         {
