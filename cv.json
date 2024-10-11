@@ -1,12 +1,12 @@
 {
     "basics": {
         "name": "David Querol",
-        "label": "Full-Stack Engineer, with experience in investment and a commitment to sustainable lifestyle.",
+        "label": "Software Development Engineer with investment experience and a commitment to sustainability.",
         "image": "/me.webp",
         "email": "contact@dvque.com",
         "phone": "(912) 555-4321",
         "url": "https://dvque.com",
-        "summary": "6+ years of experience as Full-Stack Engineer. Proven ability in building high-performing, innovative customer-centric products that exceed business needs. Entrepreneurial and Lean mindset backed by my experience in international company during hyper-growth stages.",
+        "summary": "+6 years of experience as a Software Development Engineer, with a proven track record of delivering high-performance, innovative digital solutions that consistently exceed business requirements. Highly methodical and organised, with a Lean mindset, strengthened by experience in a global manufacturing company.",
         "location": {
             "address": "2712 Broadway St",
             "postalCode": "CA 94115",
@@ -24,11 +24,6 @@
                 "network": "Github",
                 "username": "dvque",
                 "url": "https://github.com/dvque"
-            },
-            {
-                "network": "X",
-                "username": "david_qll",
-                "url": "https://twitter.com/david_qll"
             }
         ]
     },
@@ -39,13 +34,15 @@
             "url": "https://www.stadlerrail.com/es/",
             "startDate": "2018-01-01",
             "endDate": "2024",
-            "summary": "Identify and prioritize engineering inititatives to improve performance bottlenecks, reduce dependencies and enhance the development experience and operational efficiency.",
+            "summary": "My expertise includes leading development lifecycles, integrating complex systems, and ensuring operational efficiency through innovative solutions.",
             "highlights": [
-                "Developed a backoffice web application with over 10k requests per day.",
-                "Cost reduction and productivity improvement.",
-                "Led end-to-end development of applications from scratch to production.",
-                "Collaborated effectively in international team environments.",
-                "Experience in PLM Siemens Teamcenter and Mendix development."
+                "Identified and prioritized engineering initiatives to resolve performance bottlenecks and enhance development processes.",
+                "Led the entire development lifecycle, from requirement definition to production deployment.",
+                "Applied a deep understanding of business and user needs to effectively meet project requirements.",
+                "Developed TypeScript and .NET web applications integrating Teamcenter SOA libraries.",
+                "Created high-traffic back-office web applications using Agile Kanban methodology for continuous delivery.",
+                "Increased engineering engagement by streamlining business processes and integrating with Siemens Teamcenter PLM and SAP ERP.",
+                "Scaled web services across a global infrastructure, expanding operations to multiple locations."
             ]
         }
     ],
@@ -76,7 +73,7 @@
             ]
         },
         {
-            "institution": "Universitat Politècnica de València (UPV)",
+            "institution": "Polytechnic University of Valencia (UPV)",
             "url": "",
             "area": "",
             "studyType": "Bachelor's Degree in Computer Science",
@@ -84,7 +81,7 @@
             "endDate": "2018-01-01",
             "score": "",
             "courses": [
-                "Web application for license management with real-time data visualization."
+                "Web application for license management featuring real-time data visualisation."
             ]
         }
     ],
@@ -115,7 +112,17 @@
     ],
     "skills": [
         {
+            "name": "JavaScript",
+            "level": "",
+            "keywords": []
+        },
+        {
             "name": "TypeScript",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Visual Basic",
             "level": "",
             "keywords": []
         },
@@ -130,6 +137,61 @@
             "keywords": []
         },
         {
+            "name": "MVC",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": ".NET Framework",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "HTML",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "CSS",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Astro",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Angular",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "React",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Solid.js",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Web API",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Web Services",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Node.js",
+            "level": "",
+            "keywords": []
+        },
+        {
             "name": "AWS",
             "level": "",
             "keywords": []
@@ -140,17 +202,27 @@
             "keywords": []
         },
         {
-            "name": "Mendix",
+            "name": "Microsoft IIS",
             "level": "",
             "keywords": []
         },
         {
-            "name": "Teamcenter",
+            "name": "SQL Databases",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Docker",
             "level": "",
             "keywords": []
         },
         {
             "name": "Git",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "GitHub",
             "level": "",
             "keywords": []
         },
@@ -165,52 +237,17 @@
             "keywords": []
         },
         {
-            "name": "React",
+            "name": "OOP",
             "level": "",
             "keywords": []
         },
         {
-            "name": "NextJS",
+            "name": "Teamcenter PLM",
             "level": "",
             "keywords": []
         },
         {
-            "name": "Solid",
-            "level": "",
-            "keywords": []
-        },
-        {
-            "name": "Astro",
-            "level": "",
-            "keywords": []
-        },
-        {
-            "name": "Supabase",
-            "level": "",
-            "keywords": []
-        },
-        {
-            "name": "Angular",
-            "level": "",
-            "keywords": []
-        },
-        {
-            "name": "Oracle SQL",
-            "level": "",
-            "keywords": []
-        },
-        {
-            "name": "Node",
-            "level": "",
-            "keywords": []
-        },
-        {
-            "name": "Docker",
-            "level": "",
-            "keywords": []
-        },
-        {
-            "name": "GraphQL",
+            "name": "Mendix Low-Code",
             "level": "",
             "keywords": []
         }
